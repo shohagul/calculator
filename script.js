@@ -5,7 +5,7 @@ const numbersEl = document.querySelectorAll('.number');
 const operationEl = document.querySelectorAll('.operation');
 const equalEl = document.querySelector('.equal');
 const clearLastEl = document.querySelector('.last-entity-clear');
-const clearEl = document.querySelector('.all-clear');
+const clearAllEl = document.querySelector('.all-clear');
 
 
 let dis1Num = '';
@@ -92,4 +92,17 @@ equalEl.addEventListener('click', function(e){
     dis2Num = result;
     display1El.innerText = '';
     dis1Num = ''
+})
+
+clearAllEl.addEventListener('click', function(){
+    display2El.innerText = '0';
+    dis2Num = '';
+    display1El.innerText ='0'
+    dis1Num = ''
+
+})
+
+clearLastEl.addEventListener('click',function(){
+    display2El.innerText = '0'
+    dis2Num = '';
 })
